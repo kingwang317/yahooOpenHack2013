@@ -1,0 +1,642 @@
+body{padding:0; margin:0; background-color: #000;}
+#first{
+	background: url(../images/bg/texture.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+	height: 800px;
+	background-color: #000;
+}
+
+#second{
+	position: relative;
+	background: url(../images/bg/texture.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+	height: 800px;
+	background-color: #000;
+}
+
+#third{
+	position: relative;
+	background: url(../images/bg/texture.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	margin: 0 auto;
+
+	padding: 0;	
+	height: 800px;
+}
+div#nav{
+	position: fixed;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height:95px;
+	margin:0px;
+	padding:0px; 
+	background:url(../images/nav/bg.jpg);
+}
+div#nav_container{
+	position: relative;
+	width: 1000px;
+	height: 95px;
+	margin: 0 auto;
+	padding: 0px;
+}
+div#logo{
+	position: absolute;
+	top:0px;
+	left: 27px;
+	width: 133px;
+	height: 95px;
+	margin: 0px;
+	padding: 0px;
+	background:url(../images/logo/logo.png);
+}
+div#weather_info{
+	position: absolute;
+	top:0px;
+	left: 301px;
+	width: 324px;
+	height: 95px;
+	margin: 0px;
+	padding: 0px;
+	background:url(../images/nav/weather_info.jpg);
+	color:rgba(255,255,255,0.8);
+}
+div#weather_info div.temperature{
+	position: absolute;
+	top:35px;
+	left:40px;
+	font-size: 34px;
+}
+div#weather_info div.date{
+	position: absolute;
+	top:35px;
+	left:110px;
+	font-size: 12px;
+}
+div#weather_info div.location{
+	position: absolute;
+	top:55px;
+	left:110px;
+	width: 155px;
+	font-size: 12px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+}
+div#nav_container ul{
+	position: absolute;
+	top:0px;
+	left:625px;
+}
+div#nav_container ul li{
+	float: left;
+	display: block;
+	width: 124px;
+	height: 95px;
+	background:url(../images/nav/menu_bg.jpg);
+	color:rgba(255,255,255,0.8);
+	cursor:pointer;
+}
+div#nav_container a#facebook{
+	position: absolute;
+	top:25px;
+	left: 1010px;
+	display: block;
+	background:url(../images/nav/facebook.png);
+	width: 45px;
+	height: 45px;
+	background-size: 45px;
+	cursor: pointer;
+}
+div#nav_container ul li:hover{
+	color:rgba(255,255,255,1);
+	background:url(../images/nav/menu_bg_over.jpg);
+}
+div#nav_container ul li p{
+	text-align: center;
+	line-height: 95px;
+	font-size: 26px;
+}
+div#weather_content{
+	display: block;
+	width: 100%;
+	height: 345px;
+}
+div#weather_content div.content{
+	display: block;
+	width: 1000px;
+	height: 345px;
+	margin: 0 auto;
+	padding: 0px;
+}
+div#weather_content div.content div.icon{
+	float: left;
+	display: block;
+	width: 300px;
+	height: 345px;
+	margin: 0;
+	padding: 0px;
+	background:url('../images/first/weather/1.png');
+}
+div#weather_content div.content div.info{
+	float: left;
+	position: relative;
+	display: block;
+	width: 700px;
+	height: 345px;
+	padding: 0px;
+}
+div#weather_content div.content div.info div.location{
+	position: absolute;
+	top:40px;
+	left: 0px;
+	width: 260px;
+	height: 40px;
+	color: rgba(255,255,255,0.9);
+	font-size: 28px;
+	font-weight: bold;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+}
+div#weather_content div.content div.info div.date{
+	position: absolute;
+	top:80px;
+	left: 0px;
+	width: 260px;
+	height: 40px;
+	line-height: 40px;
+	color: rgba(255,255,255,0.9);
+	font-size: 14px;
+	font-weight: bold;
+}
+div#weather_content div.content div.info div.thermometericon{
+	position: absolute;
+	top:40px;
+	left: 260px;
+	width: 49px;
+	height: 77px;
+	background: url('../images/first/icon/thermometer.png');
+}
+div#weather_content div.content div.info div.thermometer{
+	position: absolute;
+	top:40px;
+	left: 310px;
+	height: 77px;
+	line-height: 77px;
+	font-size: 58px;
+	font-weight: bolder;
+	font-family: '微軟正黑體';
+	color: rgba(255,255,255,0.9);
+}
+div#weather_content div.content div.info div.c{
+	position: absolute;
+	top:70px;
+	left: 380px;
+	width: 41px;
+	height: 35px;
+	background: url('../images/first/icon/c.png');
+}
+div#weather_content div.content div.info div.state{
+	position: absolute;
+	top:20px;
+	left: 440px;
+	width: 25px;
+	height: 25px;
+	background: url('../images/first/icon/010d.png');
+	background-size: 25px;
+}
+div#weather_content div.content div.info div.wind{
+	position: absolute;
+	top:60px;
+	left: 440px;
+	width: 25px;
+	height: 25px;
+	background: url('../images/first/icon/wind.png');
+	background-size: 25px;
+}
+div#weather_content div.content div.info div.sunrise{
+	position: absolute;
+	top:100px;
+	left: 440px;
+	width: 25px;
+	height: 25px;
+	background: url('../images/first/icon/sunrise.png');
+	background-size: 25px;
+}
+div#weather_content div.content div.info div.humidity{
+	position: absolute;
+	top:60px;
+	left: 570px;
+	width: 25px;
+	height: 25px;
+	background: url('../images/first/icon/humidity.png');
+	background-size: 25px;
+}
+div#weather_content div.content div.info div.sunset{
+	position: absolute;
+	top:100px;
+	left: 570px;
+	width: 25px;
+	height: 25px;
+	background: url('../images/first/icon/sunset.png');
+	background-size: 25px;
+}
+div#weather_content div.content div.info div.state_str{
+	position: absolute;
+	top:20px;
+	left: 475px;
+	width: 200px;
+	height: 25px;
+	line-height: 25px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+}
+div#weather_content div.content div.info div.wind_str{
+	position: absolute;
+	top:60px;
+	left: 475px;
+	width: 90px;
+	height: 25px;
+	line-height: 25px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+}
+div#weather_content div.content div.info div.humidity_str{
+	position: absolute;
+	top:60px;
+	left: 605px;
+	width: 90px;
+	height: 25px;
+	line-height: 25px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+}
+div#weather_content div.content div.info div.sunrise_str{
+	position: absolute;
+	top:100px;
+	left: 475px;
+	width: 90px;
+	height: 25px;
+	line-height: 25px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+}
+div#weather_content div.content div.info div.sunset_str{
+	position: absolute;
+	top:100px;
+	left: 605px;
+	width: 90px;
+	height: 25px;
+	line-height: 25px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+div#weather_content div.content div.info div.day{
+	position: absolute;
+	top:140px;
+	width: 132px;
+}
+div#weather_content div.content div.info div.day div.top{
+	width:130px;
+	height:48px;
+	border: 1px solid #ccc;
+	background-color: #000;
+	margin: 0 0 2px 0;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: rgba(255,255,255,0.8);
+	line-height: 48px;
+}
+div#weather_content div.content div.info div.day div.bottom{
+	width:130px;
+	height:93px;
+	border: 1px solid #ccc;
+	background-color: #000;
+	padding: 5px 0 0 0;
+}
+div#weather_content div.content div.info div.day div.bottom div.wicon img{
+	display: block;
+	margin: 0 auto;
+	opacity: 0.8;
+}
+div#weather_content div.content div.info div.day div.bottom div.min_max {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: rgba(255,255,255,0.8);
+	line-height: 38px;
+}
+div#weather_content div.content div.info div.day_1{left:0px;}
+div#weather_content div.content div.info div.day_2{left:140px;}
+div#weather_content div.content div.info div.day_3{left:280px;}
+div#weather_content div.content div.info div.day_4{left:420px;}
+div#weather_content div.content div.info div.day_5{left:560px;}
+
+div#lifeAndknowledge{
+	display: block;
+	width: 100%;
+	height: auto;
+	background: url('../images/first/texture.jpg');
+	-moz-box-shadow:4px 4px 12px 4px rgba(0,0,0,0.8);
+	-webkit-box-shadow:4px 4px 12px 4px rgba(0,0,0,0.8);
+	box-shadow:4px 4px 12px 4px rgba(0,0,0,0.8);
+}
+div#lifeAndknowledge div.line{
+	display: block;
+	width: 100%;
+	height: 60px;
+	background: url('../images/first/line.png');
+}
+div#lifeAndknowledgeContent{
+	position: relative;
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+}
+div#lifeAndknowledge div.life_t{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width: 106px;
+	height: 45px;
+	background: url('../images/first/life.png');
+}
+div#lifeAndknowledge div.knowledge_t{
+	position: absolute;
+	top:0px;
+	left: 500px;
+	width: 106px;
+	height: 45px;
+	background: url('../images/first/knowledge.png');
+}
+div#lifeAndknowledge ul.life_list{
+	position: absolute;
+	top:40px;
+	left: 0px;
+	width: 500px;
+	height: auto;
+}
+div#lifeAndknowledge ul.life_list li a{
+	display: block;
+	width: 500px;
+	color:#fff;
+	text-decoration: none;
+	line-height: 21px;
+	font-size: 14px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+}
+div#lifeAndknowledge ul.life_list li a:hover{
+	color:#0ff;
+}
+div#lifeAndknowledge ul.knowledge_list{
+	position: absolute;
+	top:40px;
+	left: 500px;
+	width: 500px;
+	height: auto;
+}
+div#lifeAndknowledge ul.knowledge_list li a{
+	display: block;
+	width: 500px;
+	color:#fff;
+	text-decoration: none;
+	line-height: 21px;
+	font-size: 14px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+}
+div#lifeAndknowledge ul.knowledge_list li a:hover{
+	color:#0ff;
+}
+
+/* ===================== */
+div#map_desc{
+	float: left;
+	width: 360px;
+	background-color: #fff;
+	padding: 10px;
+}
+div#map_map{
+	margin-left: 380px;
+	background-color: #f00;
+}
+div#map_desc p.star_addr{
+	color:#080;
+	font-weight: bold;
+}
+div#map_desc p.end_addr{
+	color:#f00;
+	font-weight: bold;
+}
+div#map_desc p span{
+	color:#666;
+	font-weight: normal;
+}
+div#map_desc p , div.path_text{
+	line-height: 21px;
+}
+div.map_steps{
+	margin: 10px 0 0 0;
+	padding: 10px 0 0 0;
+	border-top: 1px solid #999;
+}
+div.map_steps b{
+	color:#4D4D94;
+}
+
+div#photo_info{
+	position: absolute;
+	width:495px;
+	height:245px;
+	padding: 5px;
+	background-color: #fff;
+	-moz-box-shadow:4px 4px 12px 4px rgba(0,0,0,0.4);
+	-webkit-box-shadow:4px 4px 12px 4px rgba(0,0,0,0.4);
+	box-shadow:4px 4px 12px 4px rgba(0,0,0,0.4);
+}
+div#photo_info div.photo{
+	float: left;
+	width: 245px;
+	height: 245px;
+	background-repeat: no-repeat;
+}
+div#photo_info div.info{
+	margin: 0 0 0 245px;
+	padding: 0 0 0 5px;
+	width: 245px;
+	height: 245px;
+}
+div#photo_info div.info div.str1{
+	height: 30px;
+	font-size: 26px;
+	color: #666;
+	font-weight: bold;
+	line-height: 30px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+}
+div#photo_info div.info div.str2{
+	min-height: 21px;
+	max-height: 150px;
+	font-size: 12px;
+	color: #666;
+	font-weight: bold;
+	line-height: 21px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	margin: 0 0 10px 0;
+}
+div#photo_info div.info div.visitbtn{
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	border:2px solid #666;
+	cursor: pointer;
+}
+div#photo_info div.info div.closebtn{
+	position: absolute;
+	top:-15px;
+	left: 475px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #fff;
+	color: #666;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+}
+/* ===================== */
+div#third_container{
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+.content_box
+{
+	border: 1px solid #4F4F4F;
+	padding: 10px;
+	margin: 5px 5px 5px 0;
+	overflow:hidden;
+	font-size:15px;
+	line-height: 150%;
+	letter-spacing: 1pt;
+	color:#353535;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 0px;
+	width:320px;
+	display: inline-block;
+	font-size:12px;
+	opacity: 0;
+}
+.content_box img.box{width:320px; opacity: 1;}
+.content_box h1{color: #fff;margin-bottom: 10px;}
+.content_box a.visitbtn{
+	float: right;
+	width: 180px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	border:2px solid #666;
+	cursor: pointer;
+	text-decoration: none;
+}
+.content_box a.visitbtn:hover{border:2px solid #0ff;}
+/* ===================== */
+.ui-tooltip, .arrow:after {
+    background: black;
+    border: 2px solid white;
+}
+.ui-tooltip {
+	padding: 10px 20px;
+	color: white;
+	border-radius: 20px;
+	font: bold 14px "Helvetica Neue", Sans-Serif;
+	text-transform: uppercase;
+	box-shadow: 0 0 7px black;
+}
+.arrow {
+	width: 70px;
+	height: 16px;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin-left: -35px;
+	bottom: -16px;
+}
+.arrow.top {
+	top: -16px;
+	bottom: auto;
+}
+.arrow.left {
+	left: 20%;
+}
+.arrow:after {
+	content: "";
+	position: absolute;
+	left: 20px;
+	top: -20px;
+	width: 25px;
+	height: 25px;
+	box-shadow: 6px 5px 9px -9px black;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	tranform: rotate(45deg);
+}
+.arrow.top:after {
+	bottom: -20px;
+	top: auto;
+}
+/* ===================== */
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.4); 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: transparent;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: rgba(13,155,255,0.5); 
+    -webkit-box-shadow: inset 0 0 6px rgba(13,155,255,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(13,155,255,0.5); 
+}
