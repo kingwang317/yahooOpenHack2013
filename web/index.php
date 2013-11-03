@@ -25,9 +25,9 @@
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="templates/Scripts/jquery.tinyMap-2.5.2.min.js"></script>
 <script type="text/javascript" >
-	var loginUrl="<?php echo $_SESSION['loginUrl']; ?>";
-	var logoutUrl="<?php echo $_SESSION['logoutUrl']; ?>";
-	var userId="<?php echo $userId; ?>";
+	var loginUrl="<?php echo isset($_SESSION['loginUrl'])?$_SESSION['loginUrl']:''; ?>";
+	var logoutUrl="<?php echo isset($_SESSION['logoutUrl'])?$_SESSION['logoutUrl']:''; ?>";
+	var userId="<?php echo isset($_SESSION['userId'])?$_SESSION['userId']:0; ?>";
 </script>
 </head>
 <body>
@@ -153,7 +153,7 @@
 				<li id='menu2'><p>Where</p></li>
 				<li id='menu3'><p>Photos</p></li>
 			</ul>
-			<a href='#' id='facebook'></a>
+			<a id='facebook'></a>
 		</div>
 	</div>
 </body>
